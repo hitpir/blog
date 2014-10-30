@@ -1,79 +1,449 @@
-<!DOCTYPE html>
-<html>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>lab prepare</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" href="css/core.css" type="text/css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Blog : ">
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
 
-    <title>Blog</title>
-  </head>
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/hitpir/blog">View on GitHub</a>
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">lab prepare</h1>
 
-          <h1 id="project_title">Blog</h1>
-          <h2 id="project_tagline"></h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/hitpir/blog/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/hitpir/blog/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">登陆US的服务器</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+in address blank, type <b>int</b>, find whatever one you can use,
+</p>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<p>
+good luck!
+</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<div class="figure">
+<p><img src="./img/photo/ctrix.jpg" alt="ctrix.jpg" />
+</p>
+</div>
+</div>
+</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">how to use module</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+module is a tool to manage EDA tools, it can load or remove the specific version of tools like Zebu to your system.
+</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>
+sytax is 
+</p>
+<div class="org-src-container">
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<pre class="src src-c">module avail zebu
+module load zebu
+module rm zebu
+</pre>
+</div>
+</div>
+</div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">设置cshrc(zebu only)</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>create .cshrc.zhaoliu under home directory
+</li>
+<li>copy ~zhaoliu/zebu setup.csh to your home
+</li>
+<li>copy ~zhaoliu/setup.csh to your home
+</li>
+</ol>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<div class="figure">
+<p><img src="./img/photo/csh2.jpg" alt="csh2.jpg" />
+</p>
+</div>
+</div>
+</div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">设置DISPLAY变量</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+第一次使用工作站时，和会出现DISPLAY变量不能传到US服务器的问题。现象就是：
+</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Blog maintained by <a href="https://github.com/hitpir">hitpir</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<div class="figure">
+<p><img src="./img/photo/display2.jpg" alt="display2.jpg" />
+</p>
+</div>
 
-    
 
-  </body>
+<p>
+解决办法跟我来，3步走：
+</p>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">in US unix xterm, type, 找到显示出来的信息</h3>
+<div class="outline-text-3" id="text-4-1">
+<div class="org-src-container">
+
+<pre class="src src-c">echo $DISPLAY
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/photo/display3.jpg" alt="display3.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">login to vgeve1.</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<div class="figure">
+<p><img src="./img/photo/display4.jpg" alt="display4.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3">use setenv DISPLAY to set</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+<b>29.0是上次在unix上display出来的信息，</b>
+<b>us01term14是unix的hostname</b>
+</p>
+
+
+<div class="figure">
+<p><img src="./img/photo/display5.jpg" alt="display5.jpg" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">设置Zebu的环境</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+这个我还不明白，现在的lab，就用620c35。
+</p>
+
+<p>
+Q: 我登陆的服务器，和我在cshrc里面设置的是不是同一个？
+<img src="./img/photo/setup.jpg" alt="setup.jpg" />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Setup your environment</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1">Connect to VG US01 network</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>Go to <a href="http://int.synopsys.comand">http://int.synopsys.comand</a> type in your credentials
+</li>
+<li>Go to VG. At the preferences tab is possible to set session characteristics
+</li>
+<li>Select a machine "ampx" by double clicking on it
+</li>
+<li>Select a window manager when prompted (ideally IceWM for bandwidth performance)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2">Obtain a Linux machine</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>rlogin to  vgvncsvr[1-8], vgvncsvr[13-22]  (for instance   'rlogin vgvncsvr1')
+</li>
+<li>rlogin to  vgeve[1-5]
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3">Setup Sun Grid Engine environment</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+source /remote/sge/default/zebutrain/common/settings.csh
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6-4" class="outline-3">
+<h3 id="sec-6-4">Setup your display</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+setenv DISPLAY &lt;display&gt;   (you can get your display from CITRIX<sub>DISPLAY</sub> environment variable)
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6-5" class="outline-3">
+<h3 id="sec-6-5">Obtain a shell to run zCui</h3>
+</div>
+<div id="outline-container-sec-6-6" class="outline-3">
+<h3 id="sec-6-6">In the newly opened terminal, setup the Sun Grid Engine environment again</h3>
+<div class="outline-text-3" id="text-6-6">
+<p>
+source /remote/sge/default/zebutrain/common/settings.csh
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6-7" class="outline-3">
+<h3 id="sec-6-7">Setup the ZeBu software</h3>
+<div class="outline-text-3" id="text-6-7">
+<p>
+source /slowfs/evedata/common/zebu/zebu<sub>setup</sub>.csh
+</p>
+
+
+<p>
+This will load all necessary modules. Please ignore the warning message about license (the ZeBu module does not set the license and warn you about it but the rest of the script set it ok).
+</p>
+
+<p>
+Note: the ZEBU<sub>IP</sub><sub>ROOT</sub> variable which define the location where is installed the Vertical Solution transactor library is also setup by the script in case you need it.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Prepare compilation, in zCui</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1">Choose the proper target hardware configuration file</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+The files are named after the runtime PC which host the emulator. A list of available emulators can be found here. If several PC are connected to the same emulator the different PC name point to the same target hardware configuration file in fact (they are links):
+/slowfs/evedata/common/config/ZSE/V6<sub>3</sub><sub>2C</sub>/&lt;runtime PC name&gt;/config/zse<sub>configuration</sub>.tcl
+</p>
+</div>
+</div>
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2">Set the job scheduling option</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+This allows you to enter commands for the zebu<sub>cae</sub> grid and also specify how many jobs to run in parallel. All Run Commands should be
+qrsh -P zebuDev -cwd -V -noshell -now no -verbose
+This should be pasted to the following fields:
+</p>
+<ul class="org-ul">
+<li>ZeBu Compiler
+</li>
+<li>Xilinx P and R
+</li>
+<li>Synthsesizer
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7-3" class="outline-3">
+<h3 id="sec-7-3">The number of machines is limited so we cannot use them all. The recommended values are:</h3>
+<div class="outline-text-3" id="text-7-3">
+<ul class="org-ul">
+<li>ZeBu Compiler : Unlimited
+</li>
+<li>Xilinx P and R   : 50
+</li>
+<li>Synthsesizer    : 50
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7-4" class="outline-3">
+<h3 id="sec-7-4">Note: Failing to comply with these setting may lead to run all zCui tasks on the local PC in parallel which may result in hanging the PC</h3>
+</div>
+<div id="outline-container-sec-7-5" class="outline-3">
+<h3 id="sec-7-5">Note: When design is small, please have set<sub>config</sub> -relocated yes in your zTopBuild tcl file, so that at runtime, you can easily pick available modules to run</h3>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Run the design on the emulator</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Once you have compiled the project, you need to use grid commands to launch runtime job on Zebu servers (vgemu1, 2, 3, and vgzeburt19) which are allocated for CAEs. This can be done interactively or batch.
+</p>
+</div>
+<div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1">Interactive mode</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+For csh/tcsh users:
+%  source /remote/sge/default/zebutrain/common/settings.csh    
+For bash/sh users:
+%  .  /remote/sge/default/zebutrain/common/settings.sh  
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2">Batch mode</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+For csh/tcsh users:
+%  source /remote/sge/default/zebutrain/common/settings.csh    
+For bash/sh users:
+%  .  /remote/sge/default/zebutrain/common/settings.sh    
+Note: By default, session timeout is set to 2 hours. For  different session timeout, use the ¡°-l h<sub>rt</sub>= &lt;time in seconds&gt;¡±. Eg:  
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Environment setting at runtime:</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+source /slowfs/evedata/common/zebu/zebu<sub>setup</sub>.csh
+setenv ZEBU<sub>SYSTEM</sub><sub>DIR</sub>   /remote/vginterfaces1/us01zebu<sub>config</sub>/CONFIG.V63X/&lt;runtime PC name&gt;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">IMPORTANT</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>When using ¡°batch mode¡± (i.e. qsub command),  you need to explicitly set the ZEBU<sub>ROOT</sub> and ZEBU<sub>SYSTEM</sub><sub>DIR</sub> and all other needed environment variables and Paths in the script as it will NOT take from the environment.
+</li>
+<li>For qsub and qrsh job submissions: the STDOUT and STDERR will be written  into  different  files  in $HOME with the following name : 
+&lt;jobname&gt;.['e'|'o']&lt;job<sub>id</sub>&gt;
+</li>
+<li>You can use ¡°-e¡± to redefine the path used for STDERR and ¡°-o¡± to redefine the path used for STDOUT.
+</li>
+<li>When certain modules/boards are not available or have long waiting time, you need to find other available modules and 
+setenv   ZEBU<sub>M0</sub><sub>PHYSICAL</sub><sub>LOCATION</sub> M<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>             This would allow you to target  a different module at runtime.
+</li>
+</ul>
+
+
+<p>
+List of ZeBu emulators and runtime PCs available in the Mountain View VG network
+&#x2013; Server1
+Modules        U0
+M0        16C
+M1        none
+</p>
+
+<p>
+Hosts        U0
+H0        swan
+</p>
+
+
+<p>
+&#x2013; Server1
+Modules        U0
+M0        16C
+M1        16C
+M2        16C
+M3        16C
+M4        16C
+</p>
+
+<p>
+Hosts        U0
+H0        vgemu1
+H1        vgemu2
+H2        vgemu3
+H3        vgzeburt19
+H4         vgzeburt20 
+</p>
+
+
+<p>
+&#x2013; FR65 VG network runtime
+</p>
+
+<p>
+fr65zebu01
+fr65zebu02
+fr65zebu03
+fr65zebu04
+fr65zebu05
+..
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>DEFINITION NOT FOUND.</p></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
 </html>
